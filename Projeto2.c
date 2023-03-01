@@ -1,3 +1,20 @@
+/*Descri√ß√£o do Projeto 02:
+
+Utilizando os conceito de struct e fun√ß√£o, adapte o algoritmo do Projeto 01, mantendo as mesmas fun√ß√µes. 
+
+Dados do usu√°rio:
+
+Manter os mesmos dados do projeto anterior, alterando somente o campo endere√ßo, que agora dever√° utilizar struct, da seguinte forma:
+
+Endere√ßo:
+
+Rua 
+Cidade
+Estado
+CEP
+*/
+
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -19,23 +36,23 @@ struct endereco_completo
 };
     
 
-    //SOLICITA«√O DE USU¡RIOS
+    //SOLICITA√á√ÉO DE USU√ÅRIOS
 
     printf("Digite quantos usuarios voce deseja cadastrar (maximo de 1000 cadastros): ");
     fflush(stdin);
     scanf("%d", &qnt);
     
-    //DADOS DOS USU¡RIOS
+    //DADOS DOS USU√ÅRIOS
 
     for(i=0; i<qnt; i++){
 
-        //REQUISI«√O DO NOME
+        //REQUISI√á√ÉO DO NOME
 
         printf("\nDigite o nome: ");
         fflush(stdin);
         fgets(nome[i],50,stdin);
         
-        //REQUISI«√O DO EMAIL
+        //REQUISI√á√ÉO DO EMAIL
 
         printf("\nDigite o email: ");
         fflush(stdin);
@@ -52,7 +69,7 @@ struct endereco_completo
 		printf("Email cadastrado com sucesso!\n");
 	    }
 
-        //REQUISI«√O DO SEXO
+        //REQUISI√á√ÉO DO SEXO
 
         printf("\nDigite o sexo ('m' para masculino ou 'f' para feminino): ");
         fflush(stdin);
@@ -67,7 +84,7 @@ struct endereco_completo
         printf("Sexo nao declarado\n");
         }
 
-        //REQUISI«√O DO ENDERE«O
+        //REQUISI√á√ÉO DO ENDERE√áO
         
         struct endereco_completo endereco1;
         printf("\n------Cadastro de endereco------\n\n");
@@ -88,13 +105,13 @@ struct endereco_completo
         fflush(stdin);
         scanf("%d", &endereco1.cep);
 
-        //REQUISI«√O DA ALTURA
+        //REQUISI√á√ÉO DA ALTURA
 
         printf("\nDigite a altura: ");
         fflush(stdin);
         scanf("%lf", &altura[i]);
 
-        //REQUISI«√O DE VACINA«√O CONTRA A COVID
+        //REQUISI√á√ÉO DE VACINA√á√ÉO CONTRA A COVID
 
         printf("\nJa se vacinou contra a covid 19?\n(Digite 1 se for sim ou qualquer numero se nao) \n");
         fflush(stdin);
@@ -178,7 +195,7 @@ struct endereco_completo
 
 	}
 
-    //EXCLUAR UM USU¡RIO
+    //EXCLUAR UM USU√ÅRIO
 
 
     else if (acao == 2)
